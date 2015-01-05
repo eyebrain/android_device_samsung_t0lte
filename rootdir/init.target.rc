@@ -55,10 +55,6 @@ on post-fs-data
     restorecon /tombstones/qcks/efs3.bin
     restorecon /tombstones/qcks/temp.dump
 
-    # for AT distributor
-    chown system radio /sys/module/cpuidle_exynos4/parameters/enable_mask
-    chmod 0664 /sys/module/cpuidle_exynos4/parameters/enable_mask
-
     # Waketime fot fast dormancy
     chown system radio /sys/devices/platform/mdm_hsic_pm0/waketime
     chmod 0660 /sys/devices/platform/mdm_hsic_pm0/waketime
